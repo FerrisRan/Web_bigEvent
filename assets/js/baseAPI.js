@@ -1,5 +1,5 @@
 //导入ajax.prefilter()用于拼接根路径和请求地址
-$.ajaxPrefilter(function(options) {
+$.ajaxPrefilter(function(options) { //ajax请求的预先处理函数
     options.url = 'http://api-breakingnews-web.itheima.net' + options.url
         //如果请求路径中有/my   就设置headers请求头  HEADERS
     if (options.url.indexOf('/my') !== -1) {
